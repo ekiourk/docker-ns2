@@ -1,0 +1,26 @@
+diff --git a/ns-2.35/linkstate/ls.h b/ns-2.35/linkstate/ls.h
+index 5a7800a..7b0fb53 100644
+--- a/ns-2.35/linkstate/ls.h
++++ b/ns-2.35/linkstate/ls.h
+@@ -134,7 +134,7 @@ public:
+ 		return ib.second ? ib.first : baseMap::end();
+ 	}
+ 
+-	void eraseAll() { erase(baseMap::begin(), baseMap::end()); }
++	void eraseAll() { this->erase(baseMap::begin(), baseMap::end()); }
+ 	T* findPtr(Key key) {
+ 		iterator it = baseMap::find(key);
+ 		return (it == baseMap::end()) ? (T *)NULL : &((*it).second);
+diff --git a/otcl-1.14/Makefile.in b/otcl-1.14/Makefile.in
+index 225fcdb..4a17bb3 100644
+--- a/otcl-1.14/Makefile.in
++++ b/otcl-1.14/Makefile.in
+@@ -4,7 +4,7 @@
+ # to your system, but you always can edit the sections below manually.
+ #
+ 
+-CC=		@CC@
++CC=		gcc-4.4
+ CFLAGS=		@CFLAGS@
+ RANLIB= 	@RANLIB@
+ INSTALL=	@INSTALL@
