@@ -11,16 +11,3 @@ index 5a7800a..7b0fb53 100644
  	T* findPtr(Key key) {
  		iterator it = baseMap::find(key);
  		return (it == baseMap::end()) ? (T *)NULL : &((*it).second);
-diff --git a/otcl-1.14/Makefile.in b/otcl-1.14/Makefile.in
-index 225fcdb..4a17bb3 100644
---- a/otcl-1.14/Makefile.in
-+++ b/otcl-1.14/Makefile.in
-@@ -4,7 +4,7 @@
- # to your system, but you always can edit the sections below manually.
- #
- 
--CC=		@CC@
-+CC=		gcc-4.4
- CFLAGS=		@CFLAGS@
- RANLIB= 	@RANLIB@
- INSTALL=	@INSTALL@

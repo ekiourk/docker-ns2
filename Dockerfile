@@ -1,11 +1,11 @@
-FROM ubuntu:14.04
+FROM ubuntu:10.04
 
 RUN apt-get update && apt-get install -y\
   build-essential\
   autoconf\
   automake\
   libxmu-dev\
-  gcc-4.4
+  gcc-4.3
 
 ADD ns-allinone-2.35.tar.gz /
 
