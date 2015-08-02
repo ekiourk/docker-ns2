@@ -7,9 +7,10 @@ RUN apt-get update && apt-get install -y\
   autoconf\
   automake\
   libxmu-dev\
+  curl\
   gcc-4.3
 
-ADD ns-allinone-2.35.tar.gz /
+RUN curl -L http://downloads.sourceforge.net/project/nsnam/allinone/ns-allinone-2.35/ns-allinone-2.35.tar.gz | tar xz
 
 RUN mv ns-allinone-2.35 ns2
 
