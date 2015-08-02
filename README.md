@@ -18,6 +18,12 @@ The following command will start the container and run all validation tests
 * `docker run -it ekiourk/ns2 ./validate`
 
 ### Usage
-By running the following command you will get a prompt from ns2 waiting for instructions
-* `docker run -it  ekiourk/ns2 ns`
+
+##### By running the following command you will get a prompt from ns2 waiting for instructions
+
+`docker run -it  ekiourk/ns2 ns`
+
+##### To run a local tcl script from inside the container.
+* Create a tcl script or download one using `wget http://nile.wpi.edu/NS/Example/ns-simple.tcl` locally
+* Run `docker run -it -v $PWD/ns-simple.tcl:/ns-simple.tcl ekiourk/ns2 ns /ns-simple.tcl` by using the -v flag to put the script from your current directory inside the root directory in the container 
 
