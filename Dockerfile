@@ -1,5 +1,7 @@
 FROM ubuntu:10.04
 
+MAINTAINER Ilias Kiourktsidis "ekiourk@gmail.com"
+
 RUN apt-get update && apt-get install -y\
   build-essential\
   autoconf\
