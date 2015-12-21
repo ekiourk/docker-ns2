@@ -1,6 +1,8 @@
 # docker-ns2
 Network simulator 2 version 2.35 running inside docker
 
+[![](https://badge.imagelayers.io/ekiourk/ns2:latest.svg)](https://imagelayers.io/?images=ekiourk/ns2:latest 'Get your own badge on imagelayers.io')
+
 ### Base Docker Image
 
 * [ubuntu:10:04](https://registry.hub.docker.com/u/library/ubuntu/)
